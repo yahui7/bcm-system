@@ -9,5 +9,5 @@ venv
 .env
 *.md
 frontend/node_modules
-frontend/src
+frontend/dist
 data/*.db
