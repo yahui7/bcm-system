@@ -86,3 +86,8 @@ async def serve_spa(full_path: str):
         return FileResponse(index_path)
 
     return {"detail": "Frontend not built. Run: cd frontend && npm run build"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8008)
